@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background-color: rgb(0, 0, 0);
+      margin: 0;
+    }
+
+    #webgl {
+      pointer-events: none;
+    }
+
+    #ui-app {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    #ui {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    #monitor-videos {
+      pointer-events: none;
+      position: 'absolute';
+      opacity: 0;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+
+    }
+
+    #css {
+      cursor: pointer;
+    }
+
+    #ui-interactive {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      pointer-events: none;
+    }
+  </style>
+
+  <!-- 3D scene based on Henry Heffernan's portfolio-website (MIT License, see LICENSE.md) -->
+
+  <!-- Primary Meta Tags -->
+  <title>Jannatul Ferdous Mim - AI Researcher</title>
+  <meta name="title" content="Jannatul Ferdous Mim - AI Researcher">
+  <meta name="description"
+    content="Jannatul Ferdous Mim, AI Researcher. Trustworthy, human-centered AI in Bangla and English.">
+
+  <!-- Public URL: name the Vercel project "jannatul-ferdous-mim". If you use another name or a custom domain, update every URL below. -->
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jannatul-ferdous-mim.vercel.app/">
+  <meta property="og:title" content="Jannatul Ferdous Mim - AI Researcher">
+  <meta property="og:description"
+    content="Jannatul Ferdous Mim, AI Researcher. Trustworthy, human-centered AI in Bangla and English.">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta property="twitter:url" content="https://jannatul-ferdous-mim.vercel.app/">
+  <meta name="twitter:url" content="https://jannatul-ferdous-mim.vercel.app/">
+
+  <meta property="twitter:title" content="Jannatul Ferdous Mim - AI Researcher">
+  <meta name="twitter:title" content="Jannatul Ferdous Mim - AI Researcher">
+
+  <meta property="twitter:description"
+    content="Jannatul Ferdous Mim, AI Researcher. Trustworthy, human-centered AI in Bangla and English.">
+  <meta name="twitter:description"
+    content="Jannatul Ferdous Mim, AI Researcher. Trustworthy, human-centered AI in Bangla and English.">
+
+  <meta property="twitter:image" content="https://jannatul-ferdous-mim.vercel.app/images/preview.jpg">
+  <meta name="twitter:image" content="https://jannatul-ferdous-mim.vercel.app/images/preview.jpg">
+
+  <!-- Images -->
+  <meta property="og:image" content="https://jannatul-ferdous-mim.vercel.app/images/preview.jpg">
+  <meta property="og:image:secure" content="https://jannatul-ferdous-mim.vercel.app/images/preview.jpg">
+
+  <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../static/images/apple-touch-icon.png">
+
+  <!-- TODO(mim): optional analytics. The original Google Analytics tag (someone else's ID) was removed; add your own gtag snippet here if you want stats. -->
+</head>
+
+<body>
+  <div id="css"></div>
+  <div id="webgl"></div>
+  <div id="overlay"></div>
+  <div id="ui-interactive"></div>
+  <div id="ui"></div>
+  <div id="monitor-videos">
+    <video id="video-1" muted loop autoplay width="0" height="0" src="../static/textures/monitor/video/base-static.mp4"
+      style="opacity: 0;"></video>
+    <video id="video-2" muted loop autoplay width="0" height="0"
+      src="../static/textures/monitor/video/static-texture-layer.mp4" style="opacity: 0;"></video>
+  </div>
+</body>
+
+</html>
